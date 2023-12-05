@@ -1,24 +1,22 @@
-import logo from "./logo.svg";
-import "@aws-amplify/ui-react/styles.css";
-import {
-  withAuthenticator,
-  Button,
-  Heading,
-  Image,
-  View,
-  Card,
-} from "@aws-amplify/ui-react";
-
-function App({ signOut }) {
+import React, { Component } from 'react'
+import './App.css';
+import { withAuthenticator } from '@aws-amplify/ui-react';
+import {NoteNavBar2, UINewNote} from "./ui-components";
+import { Routes, Route } from 'react-router-dom';
+class App extends Component {
+  render() {
   return (
-    <View className="App">
-      <Card>
-        <Image src={logo} className="App-logo" alt="logo" />
-        <Heading level={1}>We now have Auth!</Heading>
-      </Card>
-      <Button onClick={signOut}>Sign Out</Button>
-    </View>
-  );
+    <div className="App"><header className="App-header">
+      <Routes>
+        <Route exact path='/' element={<div><NoteNavBar2/></div>}/>
+        <Route exact path='/new' element={<UINewNote/>} />
+       
+        
+        
+      </Routes>
+    </header></div>
+    );
+}
 }
 
 export default withAuthenticator(App);
