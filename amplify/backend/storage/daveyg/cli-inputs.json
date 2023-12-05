@@ -1,0 +1,14 @@
+{
+  "resourceName": "daveyg",
+  "policyUUID": "81d86f1d",
+  "bucketName": "app759b178b1006843d78717e076fd3482b2",
+  "storageAccess": "auth",
+  "guestAccess": [],
+  "authAccess": [
+    "CREATE_AND_UPDATE",
+    "READ",
+    "DELETE"
+  ],
+  "triggerFunction": "NONE",
+  "groupAccess": {}
+}
