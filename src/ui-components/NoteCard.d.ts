@@ -31,6 +31,8 @@ export declare type NoteCardOverridesProps = {
     Button?: PrimitiveOverrideProps<ButtonProps>;
 } & EscapeHatchProps;
 export declare type NoteCardProps = React.PropsWithChildren<Partial<FlexProps> & {
+    pref?: any;
+} & {
     overrides?: NoteCardOverridesProps | undefined | null;
 }>;
 export default function NoteCard(props: NoteCardProps): React.ReactElement;

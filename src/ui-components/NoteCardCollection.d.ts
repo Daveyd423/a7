@@ -5,7 +5,8 @@
  **************************************************************************/
 
 import * as React from "react";
-import { FlexProps, IconProps, TextProps, ViewProps } from "@aws-amplify/ui-react";
+import { NoteCardProps } from "./NoteCard";
+import { CollectionProps } from "@aws-amplify/ui-react";
 export declare type EscapeHatchProps = {
     [elementHierarchy: string]: Record<string, unknown>;
 } | null;
@@ -17,14 +18,17 @@ export declare type Variant = {
     overrides: EscapeHatchProps;
 };
 export declare type PrimitiveOverrideProps<T> = Partial<T> & React.DOMAttributes<HTMLDivElement>;
-export declare type NoteNavBar2OverridesProps = {
-    NoteNavBar2?: PrimitiveOverrideProps<ViewProps>;
-    NoteNavBa?: PrimitiveOverrideProps<FlexProps>;
-    Vector?: PrimitiveOverrideProps<IconProps>;
-    PREFERENCES?: PrimitiveOverrideProps<TextProps>;
-    "Star 2"?: PrimitiveOverrideProps<IconProps>;
+export declare type NoteCardCollectionOverridesProps = {
+    NoteCardCollection?: PrimitiveOverrideProps<CollectionProps>;
+    NoteCard?: NoteCardProps;
 } & EscapeHatchProps;
-export declare type NoteNavBar2Props = React.PropsWithChildren<Partial<ViewProps> & {
-    overrides?: NoteNavBar2OverridesProps | undefined | null;
+export declare type NoteCardCollectionProps = React.PropsWithChildren<Partial<CollectionProps<any>> & {
+    items?: any[];
+    overrideItems?: (collectionItem: {
+        item: any;
+        index: number;
+    }) => NoteCardProps;
+} & {
+    overrides?: NoteCardCollectionOverridesProps | undefined | null;
 }>;
-export default function NoteNavBar2(props: NoteNavBar2Props): React.ReactElement;
+export default function NoteCardCollection(props: NoteCardCollectionProps): React.ReactElement;

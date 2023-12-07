@@ -5,6 +5,7 @@
  **************************************************************************/
 
 export { default as NoteCard } from "./NoteCard";
+export { default as NoteCardCollection } from "./NoteCardCollection";
 export { default as NoteNavBar } from "./NoteNavBar";
 export { default as NoteNavBar2 } from "./NoteNavBar2";
 export { default as PrefCreateForm } from "./PrefCreateForm";

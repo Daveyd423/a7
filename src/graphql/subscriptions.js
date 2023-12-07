@@ -1,39 +1,39 @@
 /* eslint-disable */
 // this is an auto generated file. This will be overwritten
 
-export const onCreateNote = /* GraphQL */ `
-  subscription OnCreateNote($filter: ModelSubscriptionNoteFilterInput) {
-    onCreateNote(filter: $filter) {
+export const onCreatePref = /* GraphQL */ `
+  subscription OnCreatePref($filter: ModelSubscriptionPrefFilterInput) {
+    onCreatePref(filter: $filter) {
       id
+      type
       name
-      description
-      image
+      priority
       createdAt
       updatedAt
       __typename
     }
   }
 `;
-export const onUpdateNote = /* GraphQL */ `
-  subscription OnUpdateNote($filter: ModelSubscriptionNoteFilterInput) {
-    onUpdateNote(filter: $filter) {
+export const onUpdatePref = /* GraphQL */ `
+  subscription OnUpdatePref($filter: ModelSubscriptionPrefFilterInput) {
+    onUpdatePref(filter: $filter) {
       id
+      type
       name
-      description
-      image
+      priority
       createdAt
       updatedAt
       __typename
     }
   }
 `;
-export const onDeleteNote = /* GraphQL */ `
-  subscription OnDeleteNote($filter: ModelSubscriptionNoteFilterInput) {
-    onDeleteNote(filter: $filter) {
+export const onDeletePref = /* GraphQL */ `
+  subscription OnDeletePref($filter: ModelSubscriptionPrefFilterInput) {
+    onDeletePref(filter: $filter) {
       id
+      type
       name
-      description
-      image
+      priority
       createdAt
       updatedAt
       __typename
