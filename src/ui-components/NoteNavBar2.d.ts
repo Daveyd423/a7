@@ -20,9 +20,9 @@ export declare type PrimitiveOverrideProps<T> = Partial<T> & React.DOMAttributes
 export declare type NoteNavBar2OverridesProps = {
     NoteNavBar2?: PrimitiveOverrideProps<ViewProps>;
     NoteNavBa?: PrimitiveOverrideProps<FlexProps>;
-    Vector?: PrimitiveOverrideProps<IconProps>;
-    PREFERENCES?: PrimitiveOverrideProps<TextProps>;
     "Star 2"?: PrimitiveOverrideProps<IconProps>;
+    PREFERENCES?: PrimitiveOverrideProps<TextProps>;
+    Vector?: PrimitiveOverrideProps<IconProps>;
 } & EscapeHatchProps;
 export declare type NoteNavBar2Props = React.PropsWithChildren<Partial<ViewProps> & {
     overrides?: NoteNavBar2OverridesProps | undefined | null;
